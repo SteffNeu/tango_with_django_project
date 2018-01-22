@@ -2,8 +2,7 @@
 <html>
 
 	{% load staticfiles %} <!-- new line -->
-	{{ MEDIA_URL }}
-
+	
 	<head>
 		<title>Rango</title>
 	</head>
@@ -12,11 +11,10 @@
 		<h1>Rango says...</h1>
 		<div>
 			hey there partner! <br />
-			<img src ="{{ MEDIA_URL}}pic.jpeg" />
 			<strong>{{ boldmessage }}</strong><br />
 		</div>
 		<div>
-			<a href="rango/about/">About</a><br />
+			<a href="about/">About</a><br />
 			<img src="{% static "images/rango.jpg" %}"
 				alt= "Picture of elf shitting chocolate" />
 		</div>
