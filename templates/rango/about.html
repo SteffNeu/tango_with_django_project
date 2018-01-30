@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
 
-	{% load staticfiles %}
-	
-	<head>
-		<title> This is my sick title! </title>
-	</head>
-	
-	<body>
+{% block title_block %}
+		About
+{% endblock %}
+
+{% block body_block %}	
 		<h1>This tutorial has been put together by Steph.</h1>
-		<div>
-			<img src="{% static "images/dw.jpg" %}"
-				alt= "Peter Capaldi is a legendary doctor, my friends." />
-		</div>
+		<img src="{% static "images/dw.jpg" %}"
+			alt= "Peter Capaldi is a legendary doctor, my friends." />
 		<div>
 			<strong>{{ boldmessage }}</strong><br />
 			also, don't forget to floss.<br />
 			<img src ="{{ MEDIA_URL}}cat.jpg" 
 			alt="This is not a cat"/><br />
-			<a href="/rango/">Back to Index</a><br />
 		</div>
-	</body>
-
-
-</html>
+{% endblock %}
