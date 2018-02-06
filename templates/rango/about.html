@@ -6,15 +6,15 @@
 {% endblock %}
 
 {% block body_block %}
-		<h1>This tutorial has been put together by Steph.</h1>
-		<p>visits : {{ visits }} </p> <br />
+		<h1>Rango says here is the about page</h1>
+		<p>This tutorial has been put together by Steph.</p><br />
+		<p>visits: {{ visits }} </p> <br />
 		<img src="{% static "images/dw.jpg" %}"
 			alt= "Peter Capaldi is a legendary doctor, my friends." />
 		<div>
 			<strong>{{ boldmessage }}</strong><br />
 			also, don't forget to floss.<br />
-			<img src ="{{ MEDIA_URL}}cat.jpg"
+			<img src="{{ MEDIA_URL}}cat.jpg"
 			alt="This is not a cat"/><br />
-
 		</div>
 {% endblock %}

@@ -1,12 +1,15 @@
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
 
+{% block title_block %}
+{% endblock %}
+
 {% block body_block %}
 		<h1>
 			{% if user.is_authenticated %}
-				howdy {{user.username}}
+				Rango says howdy {{user.username}}
 			{% else %}
-				hey there partner!
+				Rango says hey there partner!
 			{% endif %}
 		</h1>
 
@@ -16,7 +19,7 @@
 				<img src="{% static "images/rango.jpg" %}"
 					alt= "Picture of Rango" align = "right"/>
 			</p>
-			<p>visits : {{ visits }} </p> <br />
+			<p>visits: {{ visits }} </p> <br />
 			<p align="left">
 				{% if categories %}
 				<ul>

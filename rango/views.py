@@ -41,7 +41,7 @@ def about(request):
 
 	print(request.method)
 	print(request.user)
-	return render(request, 'rango/about.html', context=context_dict)
+	return render(request, 'rango/about.html', context_dict)
 
 def show_category(request, category_name_slug):
 	context_dict={}
